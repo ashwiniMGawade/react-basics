@@ -5,18 +5,19 @@ import ReactDOM from "react-dom";
 import { Header } from './components/Header';
 import { Home } from './components/Home';
 
-console.log(Header);
-console.log(Home);
-
 class App extends React.Component {
     render() {
+        let user = {
+            name: 'Ashwini',
+            company: 'Cuelogic'
+        };
         return (
             <div className="container">
                 <div className="row">
                     <Header/>
                 </div>
                 <div className="row">
-                    <Home/>
+                    <Home test={"test"} user={user} />
                 </div>
             </div>
         );
