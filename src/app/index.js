@@ -9,7 +9,8 @@ class App extends React.Component {
     render() {
         let user = {
             name: 'Ashwini',
-            company: 'Cuelogic'
+            company: 'Cuelogic',
+            hobbies: ['reading', 'sports']
         };
         return (
             <div className="container">
